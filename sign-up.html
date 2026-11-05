@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/sign-up.css">
+</head>
+
+<body>
+
+    <main class="bg-dark min-vh-100 d-flex flex-column justify-content-center">
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 col-md-6 ">
+                    <img class="rounded overflow-hidden" src="images/sign-up.jpeg" alt="diamonds">
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                    <h2>Create Account</h2>
+                    <p class="gray"> Go ahead and sign up, let everyone
+                        know how awesome you are!</p>
+                    <p class="error-message"  id="error"></p>
+                    <form novalidate>
+                        <div class="form-group">
+                            <label class="gray" for="username">Username</label>
+                            <input type="text" class="form-control" id="username">
+                        </div>
+                        <div class="form-group">
+                            <label class="gray" for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label class="gray" for="password">Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="form-group">
+                            <label class="gray" for="conform-password">Confirm Password</label>
+                            <input type="password" class="form-control" id="conform-password">
+                        </div>
+                        <div class="form-check d-flex align-items-center">
+                            <input type="checkbox" class="remember-me" id="remember">
+                            <label class="gray m-0" class="form-check-label" for="remember">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary d-block m-auto">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap scripts -->
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Main logic -->
+    <script src="js/sign-up.js"></script>
+</body>
+
+</html>
